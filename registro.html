@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Producto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h2>Registrar Nuevo Vinilo</h2>
+  <form>
+    <label for="nombre">Nombre del Vinilo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="categoria">Artista:</label>
+    <select id="categoria" name="categoria" required>
+      <option value="">Seleccione el Artista</option>
+      <option value="thedrums">The Drums</option>
+      <option value="thebeat">The Beatles</option>
+      <option value="thedoors">The Doors</option>
+    </select>
+
+    <label for="precio">Precio (S/):</label>
+    <select id="categoria" name="categoria" required>
+      <option value="">Seleccione el Precio</option>
+      <option value="thebeatles">S/ 189.90</option>
+      <option value="thedoors">S/ 75.00</option>
+      <option value="thedrums">S/ 65.50</option>
+    </select>
+
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" required></textarea>
+
+    <label for="imagen">Imagen del producto:</label>
+    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+    <button type="submit">Registrar Producto</button>
+  </form>
+  <a href="index.html">Regresar al Inicio</a>
+  <a href="productos.html">Vinilos</a>
+</body>
+</html>
